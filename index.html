@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquiries.css">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+
+
+                <li class="has-menu">
+                    <a href="#qualifications" onclick="toggleSubmenu(event)">Qualification  |</a>
+                    <ul class="submenu">
+                        <li class="Certificate-menu" onclick="toggleNestedSubmenu(event)">Certification
+                            <ul class="nested-submenu">
+                                <li onclick="openCert1('certificate1.pdf')">PCEP-Certified Entry-Level Python Programmer</li>
+                                <li onclick="openCert2('certificate2.pdf')">PCAP-Certified Associate in Python Programming</li>
+                            </ul>
+                        </li>
+                                 
+                         </ul>
+                </li>
+
+
+                <li class="has-menu">
+                   <a href="#projects" onclick="toggleSubmenu(event)">Projects  |</a>
+                   <ul class="submenu">
+                   <li><a class="downloadSpaceInvaders" href="https://drive.google.com/file/d/1jMrgoF1rBqE5RWSFfgQWPJkQG1p56v_r/view?usp=drive_link" download>GamePy (Space Wars)</a></li>
+                   <li><a class="RoboCode-link"   href="">RoboCode(Java)</a></li>
+                   <li><a class="codewars-link"   href="https://www.codewars.com/users/Rilinde/completed_solutions">Solutions</a></li>
+                   </ul>
+                </li>
+
+                
+                <li><a href="#contact">Contact </a></li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Rilinde Netshitavhadulu</h1>
+            <p class="section__text__p2">Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+            </div>
+            <div id="socials-container">
+                <img src="./linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/rilinde-netshitavhadulu-256a79105/'"/>
+                <img src="./github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/Rilinde'"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container"></div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>
